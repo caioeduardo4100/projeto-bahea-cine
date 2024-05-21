@@ -1,9 +1,8 @@
-import Link from "next/link";
-import styles from "./page.module.css";
+import styles from "./page.style.css";
 
 export default function Menu() {
     return (
-      <main className={styles.main}>
+      <main className={"container"}>
            <header>
             <div className="container">
                 <div className="logo"><img src="img/logo.png"></img></div>
