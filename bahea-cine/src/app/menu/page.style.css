@@ -1,36 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(34, 1, 1);
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
 	padding: 0 auto;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 header {
 	background-color: black;
 	width: 100%;
 	padding: 20px;
-}
-
-.menu {
-	padding-left: 1rem;
-	width: 50%;
+	border: 2px red ridge;
+	text-transform: uppercase;
 }
 
 .logo {
-	width: 13.5rem;
+	text-align: center;
 }
 
 .logo img {
-	width: 150px;
+	width: 145px;
+}
+
+.menu {
+	padding: 2.5rem;
 }
 
 .menu nav a {
     color: white;
     text-decoration: none;
     padding: 0.6rem 1.1rem;  
-    font-size: 22px;
+    font-size: 19.5px;
     transition: 0.7s;
 	border-radius: 15px;
 	text-align: center;
@@ -38,6 +48,6 @@ header {
 
 .menu nav a:hover {
     background-color: white;
-    color: black;
-    border-radius: 15px; 
+    color: red;
+    border-radius: 15px;
 }
