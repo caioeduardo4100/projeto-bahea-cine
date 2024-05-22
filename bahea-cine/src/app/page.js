@@ -17,10 +17,8 @@ export default function Home() {
               </nav>
           </div>
           <div className="container-login">
-            <span> Entre ou cadastre-se</span>
               <nav>
-                <a href="#">Login</a>
-                <a href="#">Cadastrar-se</a>
+                <span className="span">possui conta? | </span> <a href="#">Iniciar Sessão</a>
               </nav>
             </div>
         </div>
