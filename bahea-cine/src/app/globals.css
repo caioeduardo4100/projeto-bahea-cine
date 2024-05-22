@@ -51,3 +51,140 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/* Estilização da página principal */
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	background-color: rgb(34, 1, 1);
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+header {
+	background-color: black;
+	width: 100%;
+	padding: 20px;
+	border: 2px red ridge;
+	text-transform: uppercase;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo img {
+	width: 130px;
+}
+
+.menu {
+	padding: 2.5rem;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.1rem;  
+    font-size: 19.5px;
+    transition: 0.7s;
+	border-radius: 15px;
+}
+
+.menu nav a:hover {
+    background-color: white;
+    color: red;
+    border-radius: 15px;
+}
+
+.menu nav a:active {
+	color: black;
+	transition: none;
+}
+
+.container-login {
+	position: fixed;
+    right: 30px;
+	padding: 3rem;
+	border-radius: 12px;
+}
+
+.container-login span {
+	position: absolute;
+	bottom: 90%;
+	left: 74px;
+	color: white;
+	font-size: 18px;
+}
+
+.container-login nav a {
+	background-color: rgba(255, 0, 0, 0.582);
+	position: relative;
+	padding: 0.6rem 1rem;
+	color: white;
+	text-decoration: none;
+	transition: 0.7s;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+.container-login nav a:hover {
+	background-color: white;
+    color: red;
+    border-radius: 10px;
+}
+
+.container-login nav a:active {
+	color: black;
+	transition: none;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    header {
+        padding: 15px; /* Ajuste moderado no padding */
+        border: 1px solid red; /* Borda mais fina */
+    }
+
+    .logo img {
+        width: 120px; /* Tamanho do logo adequado para dispositivos maiores */
+    }
+
+    .menu {
+        padding: 1.5rem; /* Padding reduzido para economizar espaço */
+    }
+
+    .menu nav a {
+        font-size: 16px; /* Tamanho da fonte ajustado para visibilidade melhorada */
+        padding: 0.5rem 1rem; /* Ajuste no padding dos links para equilíbrio */
+    }
+
+    .container-login {
+        position: relative; /* Alteração para posição relativa para melhor ajuste */
+        right: 0; /* Alinhamento correto à direita */
+        padding: 2rem; /* Redução do padding para um layout mais compacto */
+    }
+
+    .container-login span {
+		font-size: 1rem;
+		left: 8rem;
+        bottom: 100%; /* Ajuste na posição vertical para visibilidade */
+    }
+
+    .container-login nav a {
+        left: 4rem; /* Deslocamento à esquerda ajustado para melhor alinhamento */
+        padding: 0.5rem 0.8rem; /* Redução no padding dos links para manter proporções agradáveis */
+    }
+}
