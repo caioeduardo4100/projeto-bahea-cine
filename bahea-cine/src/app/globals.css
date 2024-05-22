@@ -68,9 +68,11 @@ body {
 }
 
 .container {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 auto;
 }
@@ -116,7 +118,7 @@ header {
 }
 
 .container-login {
-	position: fixed;
+	position: absolute;
     right: 30px;
 	padding: 3rem;
 	border-radius: 12px;
@@ -125,20 +127,21 @@ header {
 .container-login span {
 	position: absolute;
 	bottom: 90%;
-	left: 74px;
+	left: 80px;
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
+	top: 2px;
 }
 
 .container-login nav a {
 	background-color: rgba(255, 0, 0, 0.582);
 	position: relative;
-	padding: 0.6rem 1rem;
+	padding: 0.49rem 0.78rem;
 	color: white;
 	text-decoration: none;
 	transition: 0.7s;
 	border-radius: 10px;
-	margin: 10px;
+	margin: 8px;
 }
 
 .container-login nav a:hover {
@@ -152,39 +155,29 @@ header {
 	transition: none;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    header {
-        padding: 15px; /* Ajuste moderado no padding */
-        border: 1px solid red; /* Borda mais fina */
+@media (min-width: 1025px) and (max-width: 1680px) {
+    .container {
+        width: 100%; 
     }
 
     .logo img {
-        width: 120px; /* Tamanho do logo adequado para dispositivos maiores */
+        max-width: 110px; 
     }
 
-    .menu {
-        padding: 1.5rem; /* Padding reduzido para economizar espaço */
-    }
-
-    .menu nav a {
-        font-size: 16px; /* Tamanho da fonte ajustado para visibilidade melhorada */
-        padding: 0.5rem 1rem; /* Ajuste no padding dos links para equilíbrio */
-    }
-
-    .container-login {
-        position: relative; /* Alteração para posição relativa para melhor ajuste */
-        right: 0; /* Alinhamento correto à direita */
-        padding: 2rem; /* Redução do padding para um layout mais compacto */
-    }
-
-    .container-login span {
-		font-size: 1rem;
-		left: 8rem;
-        bottom: 100%; /* Ajuste na posição vertical para visibilidade */
+    .menu nav a, .container-login nav a {
+        font-size: 1.1rem; 
     }
 
     .container-login nav a {
-        left: 4rem; /* Deslocamento à esquerda ajustado para melhor alinhamento */
-        padding: 0.5rem 0.8rem; /* Redução no padding dos links para manter proporções agradáveis */
+        right: 0; 
+        padding: 0.4rem 0.6rem;
+		font-size: 15px;
+		left: 15%;
     }
+
+	.container-login span {
+		font-size: 0.96rem;
+		left: 32%;
+		top: 6px;
+	}
 }
