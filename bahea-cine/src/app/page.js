@@ -10,15 +10,15 @@ export default function Home() {
           <div className="logo"><img src="img/logo.png"></img></div>
             <div className="menu">
               <nav>
-                <a href="#">Bomboniere</a>
-                <a href="#">Cartaz</a>
-                <a href="#">Lançamentos</a>
-                <a href="#">Contato</a>
+                <a href="/bomboniere">Bomboniere</a>
+                <a href="/cartaz">Cartaz</a>
+                <a href="/lancamentos">Lançamentos</a>
+                <a href="/contato">Contato</a>
               </nav>
           </div>
           <div className="container-login">
               <nav>
-                <span className="span">possui conta? | </span> <a href="#">Iniciar Sessão</a>
+                <span className="span">possui conta? | </span> <a href="/login">Iniciar Sessão</a>
               </nav>
             </div>
         </div>
