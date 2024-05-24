@@ -1,9 +1,9 @@
-import React from 'react';
 import './page.style.css';
 
-const Page = () => {
+export default function Lancamentos() {
   return (
-    <div className="container">
+    <main className={"container"}>
+      <div className="container">
       <h1>Estreias</h1>
       <h2>Filmes</h2>
       <div className="movies">
@@ -25,7 +25,6 @@ const Page = () => {
         </div>
       </div>
     </div>
+    </main>
   );
 }
-
-export default Page;
