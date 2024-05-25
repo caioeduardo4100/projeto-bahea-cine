@@ -1,5 +1,5 @@
 .container {
-    background-color: rgb(34, 1, 1);
+    background-color: #4a0404;
     color: white;
     padding: 20px;
     text-align: center;
@@ -28,8 +28,8 @@
   }
   
   .poster {
-    background-color: grey;
-    height: 300px;
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
   }
   
