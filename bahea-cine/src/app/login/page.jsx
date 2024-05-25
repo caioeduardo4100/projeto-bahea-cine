@@ -7,9 +7,9 @@ export default function Login() {
         <img src="img/logo.png" alt="Bahea Cine Logo" className="logo" />
       </a>
       <div className="login-title-container">
-        <img src="img/login.png" alt="Logo" className="title-logo" />
+        <img src="img/img-cadastro-login/login.png" alt="Logo" className="title-logo" />
         <h2 className="login-title">Login</h2>
-        <img src="img/login.png" alt="Logo" className="title-logo" />
+        <img src="img/img-cadastro-login/login.png" alt="Logo" className="title-logo" />
       </div>
       <form className="login-form">
         <input type="text" placeholder="Usuário" className="login-input" />

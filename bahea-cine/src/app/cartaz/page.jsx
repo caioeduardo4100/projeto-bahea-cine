@@ -1,7 +1,6 @@
-import React from 'react';
 import './page.style.css';
 
-const Page = () => {
+export default function Cartaz() {
   return (
     <div className="container">
       <div className="title-container">
@@ -35,5 +34,3 @@ const Page = () => {
     </div>
   );
 }
-
-export default Page;

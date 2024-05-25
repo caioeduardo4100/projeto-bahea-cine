@@ -4,12 +4,12 @@ export default function Cadastro() {
   return (
     <div className="cadastro-container">
       <a href="/">
-        <img src="img/logo.png" alt="Bahea Cine Logo" className="logo" />
+        <img src="img/img-cadastro/logo.png" alt="Bahea Cine Logo" className="logo" />
       </a>
       <div className="cadastro-title-container">
-        <img src="img/cadastro.png" alt="Logo" className="title-logo" />
+        <img src="img/img-cadastro/cadastro.png" alt="Logo" className="title-logo" />
         <h2 className="cadastro-title">Cadastro</h2>
-        <img src="img/cadastro.png" alt="Logo" className="title-logo" />
+        <img src="img/img-cadastro/cadastro.png" alt="Logo" className="title-logo" />
       </div>
       <form className="cadastro-form">
         <input type="text" placeholder="Nome" className="cadastro-input" />
