@@ -1,3 +1,89 @@
-h1 {
-    color: white;
-}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f8ff; 
+  }
+  
+  .authBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4682b4; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff; 
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    color: #333; 
+  }
+  
+  .inputGroup input::placeholder {
+    color: #999; 
+  }
+  
+  .authButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff; 
+    border: none;
+    border-radius: 5px;
+    color: #4682b4; 
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .authButton:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .registerPrompt, .loginPrompt {
+    margin-top: 10px;
+    color: #fff; 
+  }
+  
+  .registerLink, .loginLink {
+    color: #fff; 
+    text-decoration: none;
+  }
+  
+  .registerLink:hover, .loginLink:hover {
+    text-decoration: underline;
+  }
+  
