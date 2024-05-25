@@ -1,7 +1,6 @@
-import React from 'react';
 import './page.style.css';
 
-const Page = () => {
+export default function Login() {
   return (
     <div className="login-container">
       <a href="/">
@@ -26,4 +25,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+
