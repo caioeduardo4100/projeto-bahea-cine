@@ -1,3 +1,165 @@
-h1 {
+html, body {
+    font-size: 16px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: rgb(34, 1, 1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    background-color: black;
     color: white;
-}
+    flex-wrap: wrap;
+    border: 2px solid red; /* Borda vermelha */
+    box-sizing: border-box;
+    margin-bottom: 4rem; /* Adiciona margem inferior */
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    height: 2.5rem; /* 40px */
+    vertical-align: middle;
+  }
+  
+  .navbar nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  
+  .navbar nav a {
+    margin: 0 0.5rem; /* 8px */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; /* 16px */
+  }
+  
+  .navbar .login {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .login a {
+    background-color: #800000;
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
+    border-radius: 0.3125rem; /* 5px */
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .contact-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem; /* 20px */
+  }
+  
+  .contact-card {
+    background-color: #4b0082;
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px */
+    padding: 1.25rem; /* 20px */
+    width: 100%;
+    max-width: 25rem; /* 400px */
+  }
+  
+  .contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #800000;
+    border-radius: 0.3125rem; /* 5px */
+    padding: 0.625rem; /* 10px */
+    color: white;
+    margin-bottom: 1.25rem; /* 20px */
+  }
+  
+  .contact-header h1 {
+    margin: 0;
+    font-size: 1.5rem; /* 24px */
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.9375rem; /* 15px */
+  }
+  
+  .input-group label {
+    margin-bottom: 0.3125rem; /* 5px */
+    color: white;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    padding: 0.625rem; /* 10px */
+    border: 0.0625rem solid #ccc; /* 1px */
+    border-radius: 0.3125rem; /* 5px */
+    outline: none;
+    font-size: 1rem; /* 16px */
+  }
+  
+  .input-group input {
+    height: 2.5rem; /* 40px */
+  }
+  
+  .input-group textarea {
+    height: 6.25rem; /* 100px */
+    resize: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.625rem; /* 10px */
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    background-color: #800000;
+    color: white;
+    font-size: 1rem; /* 16px */
+    cursor: pointer;
+    margin-top: 0.625rem; /* 10px */
+  }
+  
+  button:hover {
+    background-color: #3a0066;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar nav a {
+      margin: 0.3125rem 0; /* 5px 0 */
+    }
+  
+    .contact-card {
+      max-width: 90%;
+    }
+  }
+  
