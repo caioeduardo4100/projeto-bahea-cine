@@ -1,12 +1,14 @@
+'use client';
 import React from 'react';
 import './page.style.css';
+import logo from '../../../public/img/logo.png';
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="page-container">
       <header className="navbar">
         <div className="logo">
-          <h1>BAHEA CINE</h1>
+          <img src={logo} alt="Bahea Cine" />
         </div>
         <nav>
           <a href="/bomboniere">BOMBONIERE</a>
@@ -39,6 +41,7 @@ const ContactPage = () => {
             <button type="submit">Enviar Mensagem</button>
           </form>
         </div>
+        <button className="back-button" onClick={() => window.history.back()}>Voltar</button>
       </div>
     </div>
   );
