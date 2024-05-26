@@ -1,7 +1,7 @@
-'use client'; // Adicione esta linha no topo se estiver usando Next.js
+'use client';
 import React from 'react';
 import './page.style.css';
-import logo from '/workspace/projeto-bahea-cine/bahea-cine/public/img/logo.png'; // Atualize o caminho para o arquivo da logo
+import logo from '../../../public/img/logo.png';
 
 const ContactPage = () => {
   return (
