@@ -1,0 +1,68 @@
+.title {
+    font-size: 2rem;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-content {
+    flex-grow: 1;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+}
+
+.product-table th {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.product-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.right-content {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.total {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.amount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.payment-message {
+    font-size: 1rem;
+    color: white;
+}

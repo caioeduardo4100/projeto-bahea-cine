@@ -10,24 +10,25 @@
 
 .back-link {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: orange;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 2px solid orange;
-  border-radius: 5px;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .title {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: orangered;
+  background-color: black;
   color: white;
   padding: 10px 20px;
-  border: 2px solid orange;
+  border: 2px solid rgb(34, 1, 1);
   border-radius: 5px;
   font-size: 30px;
   display: inline-block;

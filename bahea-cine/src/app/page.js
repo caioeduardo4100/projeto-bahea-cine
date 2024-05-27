@@ -9,9 +9,12 @@ export default function Home() {
             <div className="menu">
               <nav>
                 <a href={"/bomboniere"}>Bomboniere</a>
-                <a href={"/cartaz"}>Cartaz</a>
+                <a href={"/pre-vendas"}>Pré-Vendas</a>
                 <a href={"/lancamentos"}>Lançamentos</a>
                 <a href={"/contato"}>Contato</a>
+                <a href={"/assinaturas"}>Assinaturas</a>
+                <a href={"/compras"}>Compras</a>
+
               </nav>
           </div>
           <div className="container-login">
