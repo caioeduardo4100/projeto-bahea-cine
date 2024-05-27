@@ -1,5 +1,4 @@
 import './page.style.css';
-import Link from "next/link";
 
 export default function Login() {
   return (
@@ -19,9 +18,9 @@ export default function Login() {
       </form>
       <div className="options">
         <p className="no-account">Não possui uma conta?</p>
-        <Link href={"/cadastro"} className="option-link">Fazer Cadastro</Link>
+        <a href={"/cadastro"} className="option-link">Fazer Cadastro</a>
         <span className="option-divider">|</span>
-        <Link href={"/"} className="option-link">Página Inicial</Link>
+        <a href={"/"} className="option-link">Página Inicial</a>
       </div>
     </div>
   )
