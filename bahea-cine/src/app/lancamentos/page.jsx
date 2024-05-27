@@ -3,7 +3,7 @@ import './page.style.css';
 export default function Lancamentos() {
   return (
     <div className="container">
-      <h1>Estreias</h1>
+      <h1 className="title">Estreias</h1>
       <h2>Filmes</h2>
 
       <div className="movies">
@@ -25,5 +25,5 @@ export default function Lancamentos() {
         </div>
       </div>
     </div>
-  );
+  )
 }

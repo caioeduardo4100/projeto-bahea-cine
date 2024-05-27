@@ -85,10 +85,6 @@ header {
 	text-transform: uppercase;
 }
 
-.logo {
-	text-align: center;
-}
-
 .logo img {
 	width: 175px;
 }
@@ -118,39 +114,39 @@ header {
 }
 
 .container-login {
+	display: flex; 
+    align-items: center; 
+    justify-content: center;
 	position: absolute;
-    right: 0;
-	top: 0;
-	padding: 1rem;
-	border-radius: 12px;
+    top: 12px;
+	right: 1px;
+	padding: 0.4rem;
 }
 
-.container-login .span {
-	font-size: 13px;
-	color: white;
+.container-login .login-img {
+	position: relative;
+	top: 6px;
+	width: 20px;
+	margin-right: 5px;
 }
 
 .container-login nav a {
-	background-color: rgba(255, 0, 0, 0.582);
 	position: relative;
-	bottom: 0;
-	padding: 0.45rem 0.5rem;
+	border: 1px solid red;
+	border-radius: 30px;
 	color: white;
-	text-decoration: none;
-	transition: 0.6s;
-	border-radius: 10px;
-	font-size: 13px;
-	display: inline-block;
+    text-decoration: none;
+    transition: 0.6s;
+    padding: 0.65rem;
+    font-size: 13px;
 }
 
 .container-login nav a:hover {
-	background-color: white;
     color: red;
-    border-radius: 10px;
 }
 
 .container-login nav a:active {
-	color: black;
+	color: white;
 	transition: none;
 }
 
@@ -160,7 +156,7 @@ header {
     }
 
     .logo img {
-        max-width: 110px; 
+        max-width: 120px; 
     }
 
     .menu nav a {
@@ -168,14 +164,9 @@ header {
     }
 
     .container-login nav a {
-        padding: 0.47rem 0.67rem;
+        padding: 0.55rem;
 		font-size: 12px;
+		bottom: 6px;
 		left: 0;
     }
-
-	.container-login .span {
-		font-size: 12px;
-		left: 33%;
-		top: 6px;
-	}
 }

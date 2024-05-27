@@ -1,9 +1,10 @@
 import './page.style.css';
+import Link from "next/link";
 
 export default function Cartaz() {
   return (
     <div className="container">
-      <a href="/" className="back-link">Voltar para a Página Inicial</a>
+      <Link href="/" className="back-link">Voltar para a Página Inicial</Link>
       <h1 className="title">Filmes em Cartaz</h1>
       <div className="movies">
         <div className="movie-row">
@@ -26,5 +27,5 @@ export default function Cartaz() {
         </div>
       </div>
     </div>
-  );
+  )
 }
