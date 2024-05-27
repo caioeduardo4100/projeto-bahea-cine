@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Login() {
   return (
     <div className="login-container">
-      <Link href="/">
+      <a href={"/"}>
         <img src={"img/logo.png"} alt="Bahea Cine Logo" className="logo" />
-      </Link>
+      </a>
       <div className="login-title-container">
         <img src="img/img-cadastro-login/login.png" alt="Logo" className="title-logo" />
         <h2 className="login-title">Login</h2>

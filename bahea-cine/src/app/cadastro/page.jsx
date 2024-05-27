@@ -1,12 +1,11 @@
 import './page.style.css';
-import Link from "next/link";
 
 export default function Cadastro() {
   return (
     <div className="cadastro-container">
-      <Link href="/">
+      <a href={"/"}>
         <img src="img/logo.png" alt="Bahea Cine Logo" className="logo" />
-      </Link>
+      </a>
       <div className="cadastro-title-container">
         <img src="img/img-cadastro-login/cadastro.png" alt="Logo" className="title-logo" />
         <h2 className="cadastro-title">Cadastro</h2>

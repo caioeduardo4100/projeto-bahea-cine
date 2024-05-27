@@ -1,12 +1,11 @@
 import './page.style.css';
-import Link from "next/link";
 
 export default function Bomboniere() {
   return (
     <div className="bomboniere-container">
-      <Link href="/">
+      <a href={"/"}>
         <img src="img/logo.png" alt="Bahea Cine Logo" className="logo" />
-      </Link>
+      </a>
       <h2 className="bomboniere-title">Bomboniere</h2>
       <div className="shelf"> 
         <h3 className="snack-category">Produtos</h3>

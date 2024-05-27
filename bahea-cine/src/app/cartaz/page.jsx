@@ -1,10 +1,9 @@
 import './page.style.css';
-import Link from "next/link";
 
 export default function Cartaz() {
   return (
     <div className="container">
-      <Link href="/" className="back-link">Voltar para a Página Inicial</Link>
+      <a href={"/"} className="back-link">Voltar para a Página Inicial</a>
       <h1 className="title">Filmes em Cartaz</h1>
       <div className="movies">
         <div className="movie-row">
