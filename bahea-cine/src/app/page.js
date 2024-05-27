@@ -14,7 +14,6 @@ export default function Home() {
                 <a href={"/contato"}>Contato</a>
                 <a href={"/assinaturas"}>Assinaturas</a>
                 <a href={"/compras"}>Compras</a>
-
               </nav>
           </div>
           <div className="container-login">

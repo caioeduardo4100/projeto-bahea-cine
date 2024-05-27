@@ -160,12 +160,12 @@ header {
     }
 
     .menu nav a {
-        font-size: 1.15rem; 
+        font-size: 0.96rem; 
     }
 
     .container-login nav a {
         padding: 0.55rem;
-		font-size: 12px;
+		font-size: 11px;
 		bottom: 6px;
 		left: 0;
     }

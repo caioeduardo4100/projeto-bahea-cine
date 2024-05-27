@@ -29,7 +29,6 @@ export default function Compras() {
                                 <td>R$ 15,00</td>
                                 <td>R$ 30,00</td>
                             </tr>
-                            {}
                         </tbody>
                     </table>
                 </div>
