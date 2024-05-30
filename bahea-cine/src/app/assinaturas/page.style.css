@@ -1,41 +1,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
- 
 
 body {
-	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Estilização da página principal */
-body {
-	width: 100%;
-	background-color: rgb(34, 1, 1);
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-color: #4a0404;
 }
 
 .container {

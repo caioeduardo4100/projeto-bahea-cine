@@ -29,5 +29,5 @@ export default function Contato() {
         <button className="back-button" onClick={() => window.history.back()}>Voltar</button>
       </div>
     </div>
-  )
+  );
 }

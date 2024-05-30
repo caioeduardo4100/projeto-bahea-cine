@@ -1,4 +1,4 @@
-import './page.style.css';
+import "./page.style.css";
 
 export default function Compras() {
     return (

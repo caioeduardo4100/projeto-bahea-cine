@@ -26,5 +26,5 @@ export default function PreVendas() {
         </div>
       </div>
     </div>
-  )
+  );
 }

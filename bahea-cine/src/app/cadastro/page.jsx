@@ -17,7 +17,15 @@ export default function Cadastro() {
         <input type="email" placeholder="Email" className="cadastro-input" />
         <input type="password" placeholder="Senha" className="cadastro-input" />
         <button type="submit" className="cadastro-button">Cadastrar-se</button>
+      <div className="options">
+        <p className="title-login">Já tem uma conta?</p>
+        <div className="container-options">
+          <a href="/login" className="option-link">Faça Login</a>
+          <span className="option-divider">|</span>
+          <a href="/" className="option-link">Página Inicial</a>
+        </div>
+      </div>
       </form>
     </div>
-  )
+  );
 }

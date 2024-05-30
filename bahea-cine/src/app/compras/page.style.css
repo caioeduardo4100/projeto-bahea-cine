@@ -1,3 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+ 
+body {
+    background-color: #4a0404;
+}
+
+
 .title {
     font-size: 2rem;
     margin: 20px 0;

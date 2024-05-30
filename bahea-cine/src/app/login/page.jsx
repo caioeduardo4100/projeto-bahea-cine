@@ -23,5 +23,5 @@ export default function Login() {
         <a href={"/"} className="option-link">Página Inicial</a>
       </div>
     </div>
-  )
+  );
 }
