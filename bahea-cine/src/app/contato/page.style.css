@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  background-color: #4a0404;
+  background-color: rgb(34, 1, 1);
   font-family: Arial, sans-serif;
 }
 
@@ -104,33 +104,17 @@ body {
   font-size: 1.5rem;
 }
 
-.input-group {
+.contact-info {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 0.9375rem;
-}
-
-.input-group label {
-  margin-bottom: 0.3125rem;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
-.input-group input,
-.input-group textarea {
-  padding: 0.625rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.3125rem;
-  outline: none;
+.contact-info p {
+  margin: 0;
+  text-align: center;
   font-size: 1rem;
-}
-
-.input-group input {
-  height: 2.5rem;
-}
-
-.input-group textarea {
-  height: 6.25rem;
-  resize: none;
 }
 
 button {
