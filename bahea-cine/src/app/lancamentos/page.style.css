@@ -1,23 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #4a0404;
+}
+
 .container {
-    background-color: #4a0404;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
   }
   
-  h1 {
+  .title {
+    position: absolute;
+    top: 20px;
+    color: #fff;
     font-size: 2em;
   }
   
   h2 {
+    position: absolute;
+    top: 60px;
+    color: white;
     font-size: 1.5em;
   }
   
   .movies {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    color: white;
+    margin: 10px;
+    gap: 25px;
+  }
+
+  .movie-row {
+    display: flex;
+    justify-content: space-between;
   }
   
   .movie-card {
@@ -28,8 +54,8 @@
   }
   
   .poster {
-    background-color: grey;
-    height: 300px;
+    width: 175px;
+    height: 250px;
     margin-bottom: 10px;
   }
   

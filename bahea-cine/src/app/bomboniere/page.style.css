@@ -1,3 +1,85 @@
-h1 {
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+ }
+
+body {
+  background-color: #4a0404;
 }
+
+.bomboniere-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .logo {
+    width: 180px;
+    height: auto;
+    position: absolute; /* Adicionado para posicionar a logo no canto superior esquerdo */
+    top: 10px;
+    left: 10px;
+  }
+  
+  .bomboniere-title {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 1px #ffffff;
+    margin-bottom: 220px;
+    text-align: center; /* Adicionado para centralizar o título */
+  }
+  
+  .shelf {
+    width: 100%;
+    background-color: #2d2d2d; /* Adicionado para criar a prateleira */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionado para criar a prateleira */
+  }
+  
+  .snack-category {
+    font-size: 30px;
+    text-shadow: 1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 1px #ffffff;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .snack-items {
+    display: flex;
+    color: #ffffff;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: auto; /* Adicionado para criar um carrossel */
+  }
+  
+  .snack-item {
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .snack-image {
+    width: 90px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .snack-name {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .add-to-cart-button {
+    padding: 10px 20px;
+    background-color: #038ab3;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  

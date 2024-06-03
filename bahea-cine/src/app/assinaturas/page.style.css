@@ -1,0 +1,202 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #4a0404;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+header {
+	background-color: black;
+	width: 100%;
+	padding: 20px;
+	border: 2px red ridge;
+	text-transform: uppercase;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo img {
+	width: 120px;
+}
+
+.menu {
+	padding: 2.5rem;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.1rem;  
+    font-size: 19.5px;
+    transition: 0.6s;
+	border-radius: 15px;
+}
+
+.menu nav a:hover {
+    background-color: white;
+    color: red;
+    border-radius: 15px;
+}
+
+.menu nav a:active {
+	color: black;
+	transition: none;
+}
+
+.container-login {
+	position: absolute;
+    right: 0;
+	top: 0;
+	padding: 1rem;
+	border-radius: 12px;
+}
+
+.container-login .span {
+	font-size: 13px;
+	color: white;
+}
+
+.container-login nav a {
+	background-color: rgba(255, 0, 0, 0.582);
+	position: relative;
+	bottom: 0;
+	padding: 0.45rem 0.5rem;
+	color: white;
+	text-decoration: none;
+	transition: 0.6s;
+	border-radius: 10px;
+	font-size: 13px;
+	display: inline-block;
+}
+
+.container-login nav a:hover {
+	background-color: white;
+    color: red;
+    border-radius: 10px;
+}
+
+.container-login nav a:active {
+	color: black;
+	transition: none;
+}
+
+@media (min-width: 1025px) and (max-width: 1680px) {
+    .container {
+        width: 100%; 
+    }
+
+    .logo img {
+        max-width: 110px; 
+    }
+
+    .menu nav a {
+        font-size: 1.15rem; 
+    }
+
+    .container-login nav a {
+        padding: 0.47rem 0.67rem;
+		font-size: 12px;
+		left: 0;
+    }
+
+	.container-login .span {
+		font-size: 12px;
+		left: 33%;
+		top: 6px;
+	}
+}
+
+/* Estilo específico da página de assinaturas */
+.subscription-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.back-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-link:hover {
+    background-color: black;
+    color: white;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    background-color: white;
+}
+
+.plan-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.plan-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.plan-description li {
+    margin-bottom: 5px;
+}
+
+.plan-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: darkred;
+}
