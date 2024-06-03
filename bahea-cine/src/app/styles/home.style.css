@@ -22,7 +22,7 @@ body {
 header {
 	background-color: black;
 	width: 100%;
-	padding: 20px;
+	padding: 12px;
 	border: 2px red ridge;
 	text-transform: uppercase;
 }
@@ -60,7 +60,7 @@ header {
     align-items: center; 
     justify-content: center;
 	position: absolute;
-    top: 12px;
+    top: 8px;
 	right: 1px;
 	padding: 0.4rem;
 }
@@ -92,17 +92,43 @@ header {
 	transition: none;
 }
 
+.container-section {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(249, 0, 0, 0.444);
+	padding: 0 15px;
+}
+
+.description .title {
+	font-size: 2.5rem;
+  	margin-bottom: 20px;
+	color: #fff;
+}
+
+.description p {
+	font-size: 1.2rem;
+  	margin-bottom: 20px;
+  	color: #ffffff;
+}
+
 @media (max-width: 1680px) and (min-width: 1025px) {
     .container {
         width: 100%;
     }
+
+	header {
+		padding: 9px;
+	}
 
     .logo img {
         max-width: 120px; 
     }
 
     .menu nav a {
-        font-size: 0.98rem; 
+		padding: 0.9rem;
+        font-size: 0.96rem; 
     }
 
     .container-login nav a {
