@@ -24,12 +24,17 @@ export default function Home() {
             </div>
         </div>
       </header>
-      <section className="container-section">
-      <div className="description">
-        <h2 className="title">BAHEA-CINE</h2>
-        <p>O cinema ideal para sua família e amigos</p>
+      <section className="circle-container">
+      <div className="circle-content">
+        <p>Divertindo famílias e amigos na sua região</p>
+        <div className="logo-circle"></div>
+        <div className="palm-right"></div>
+        <div className="palm-left"></div>
       </div>
       </section>
+      <footer>
+        <p> &copy; Bahea-Cine - Todos os direitos reservados</p>
+      </footer>
     </main>
   )
 }
