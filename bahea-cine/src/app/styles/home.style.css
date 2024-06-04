@@ -203,4 +203,9 @@ footer p{
 	.circle-content .palm-left {
 		background-size: 460px;
 	}
+
+	footer p {
+		padding: 0.4rem;
+		font-size: 0.9rem;
+	}
 }
