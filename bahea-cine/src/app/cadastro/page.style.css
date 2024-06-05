@@ -1,114 +1,120 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
- }
+}
 
 body {
-  background-color: #4a0404;
-}
-
-.cadastro-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 88vh;
-  position: relative;
-}
-
-.logo {
-  width: 180px;
-  height: auto;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.cadastro-title-container {
-  display: flex;
   align-items: center;
-  margin-bottom: 65px;
+  min-height: 100vh;
+  background: url(/img/img-cadastro-login/background-login-cadastro.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.title-logo {
-  width: 50px;
-  height: auto;
-  margin: 0 20px;
+.wrapper-cadastro {
+  width: 550px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px 40px;
 }
 
-.cadastro-title {
-  color: #ffffff;
-  font-size: 50px;
-  text-shadow: 1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 1px #ffffff;
+.wrapper-cadastro h1 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bolder;
+  background-image: url(/img/img-cadastro-login/cadastro.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 51px;
 }
 
-.cadastro-form {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
+.wrapper-cadastro .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
 }
 
-.cadastro-input {
-  margin-bottom: 20px;
-  padding: 12px;
-  border-radius: 30px;
-  border: 3px solid #ffffff;
-  font-size: 18px;
-}
-
-.cadastro-button {
-  padding: 10px;
-  border-radius: 30px;
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
   border: none;
-  font-size: 0.95rem;
-  background-color: #038ab3;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
   color: #fff;
+  padding: 20px 45px 20px 20px;
+  font-weight: lighter;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.wrapper-cadastro .btn {
+  width: 350px;
+  margin-left: 55px;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, .1);
   cursor: pointer;
-  width: 60%;
-  align-self: center;
-  transition: 0.7s;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.cadastro-button:hover {
-  background-color: #045c77;
+.wrapper-cadastro .btn:hover {
+  background: #f8f8f8; 
+  box-shadow: 0 0 28px rgba(0, 0, 0, .2); 
+  
 }
 
-.cadastro-button:active {
-  color: #7c7c7c;
-  transition: none;
+.wrapper-cadastro .btn:active {
+  background: #a7a7a7; 
+  box-shadow: 0 0 12px rgba(0, 0, 0, .2); 
+  transform: translateY(1px); 
 }
 
-.options {
-  position: relative;
-  top: 42px;
+.wrapper-cadastro .login-link {
+  font-size: 15px;
   text-align: center;
+  margin: 20px 0 25px;
 }
 
-.container-options {
-  position: relative;
-  top: 12px;
-}
-
-.options .title-login {
+.login-link p a {
   color: #fff;
-  text-align: center;
-}
-
-.option-link {
-  color: #00c3ff;
   text-decoration: none;
+  font-weight: 600;
+  margin-left: 4px
 }
 
-.option-link:hover {
-  color: #00c3ffb0;
+.login-link p a:hover {
+  text-decoration: underline;
 }
 
-.option-link:active{
+.back-home {
+  display: flex;
+  justify-content: center;
   color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
-.option-divider {
-  margin: 10px;
-  color: #fff;
+.back-home:hover {
+  text-decoration: underline;
 }

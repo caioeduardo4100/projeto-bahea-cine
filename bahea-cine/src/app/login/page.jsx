@@ -2,26 +2,31 @@ import './page.style.css';
 
 export default function Login() {
   return (
-    <div className="login-container">
-      <a href={"/"}>
-        <img src={"img/logo.png"} alt="Bahea Cine Logo" className="logo" />
-      </a>
-      <div className="login-title-container">
-        <img src="img/img-cadastro-login/login.png" alt="Logo" className="title-logo" />
-        <h2 className="login-title">Login</h2>
-        <img src="img/img-cadastro-login/login.png" alt="Logo" className="title-logo" />
-      </div>
-      <form className="login-form">
-        <input type="text" placeholder="Usuário" className="login-input" />
-        <input type="password" placeholder="Senha" className="login-input" />
-        <button type="submit" className="login-button">Entrar</button>
+    <div className="wrapper-login">
+      <form action={"#"}>
+          <h1>Login</h1>
+          <div className="input-box">
+            <input type="email" placeholder="Email" required/>
+          </div>
+
+          <div className="input-box">
+            <input type="password" placeholder="Senha" required/>
+          </div>
+
+          <div class="remember-forgot">
+            <label><input type="checkbox"/>Lembrar-me</label>
+            <a href={"#"}>Esqueci minha senha</a>
+          </div>
+
+        <button type="submit" className="btn">Entrar</button>
+
+        <div className="register-link">
+          <p>Não possui uma conta? <a href={"/cadastro"}>Cadastrar-se</a>
+          </p>
+        </div>
+        
+        <a href={"/"} className="back-home">Voltar para a página principal</a>
       </form>
-      <div className="options">
-        <p className="no-account">Não possui uma conta?</p>
-        <a href={"/cadastro"} className="option-link">Fazer Cadastro</a>
-        <span className="option-divider">|</span>
-        <a href={"/"} className="option-link">Página Inicial</a>
-      </div>
     </div>
   );
 }

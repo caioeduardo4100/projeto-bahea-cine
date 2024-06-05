@@ -1,109 +1,143 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
- }
+}
 
 body {
-  background-color: #4a0404;
-}
-
-.login-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 88vh;
-  position: relative;
-}
-
-.logo {
-  width: 180px;
-  height: auto;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.login-title-container {
-  display: flex;
   align-items: center;
-  margin-bottom: 100px;
+  min-height: 100vh;
+  background: url(/img/img-cadastro-login/background-login-cadastro.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.title-logo {
-  width: 50px;
-  height: auto;
-  margin: 0 20px;
-}
-
-.login-title {
-  color: #ffffff;
-  font-size: 50px;
-  text-shadow: 1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 1px #ffffff;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-}
-
-.login-input {
-  margin-bottom: 20px;
-  padding: 12px;
-  border-radius: 30px;
-  border: 3px solid #ffffff;
-  font-size: 18px;
-}
-
-.login-button {
-  padding: 10px;
-  border-radius: 30px;
-  border: none;
-  font-size: 0.95rem;
-  background-color: #038ab3;
+.wrapper-login {
+  width: 550px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   color: #fff;
-  cursor: pointer;
-  width: 60%;
-  align-self: center;
-  transition: 0.7s;
+  border-radius: 10px;
+  padding: 20px 40px;
 }
 
-.login-button:hover{
-  background-color: #025670;
-}
-
-.login-button:active {
-  color: #7c7c7c;
-  transition: none;
-}
-
-.options {
-  margin-top: 70px;
-}
-
-.options .no-account {
+.wrapper-login h1 {
+  font-size: 36px;
   text-align: center;
-  margin-bottom: 12px;
-  color: white;
+  font-weight: bolder;
+  background-image: url(/img/img-cadastro-login/login.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 50px;
 }
 
-.option-link {
-  color: #00c3ff;
+.wrapper-login .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+  font-weight: lighter;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.wrapper-login .remember-forgot {
+  display: flex;
+  justify-content: center;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+  color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
   text-decoration: none;
-  margin: 10px;
+  margin-left: 5rem;
 }
 
-.option-link:hover{
-  color: #00c3ffb0;
+.remember-forgot a:hover {
+  text-decoration: underline;
 }
 
-.option-link:active{
+.wrapper-login .btn {
+  width: 350px;
+  margin-top: 12px;
+  margin-left: 55px;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.wrapper-login .btn:hover {
+  background: #f8f8f8; 
+  box-shadow: 0 0 28px rgba(0, 0, 0, .2); 
+  
+}
+
+.wrapper-login .btn:active {
+  background: #a7a7a7; 
+  box-shadow: 0 0 12px rgba(0, 0, 0, .2); 
+  transform: translateY(1px); 
+}
+
+.wrapper-login .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 25px;
+}
+
+.register-link p a {
   color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 4px;
 }
 
-.option-divider {
-  margin: 2px;
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.back-home {
+  display: flex;
+  justify-content: center;
   color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.back-home:hover {
+  text-decoration: underline;
 }
